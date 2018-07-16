@@ -28,4 +28,14 @@ Route::get('/cart','frontend\CartController@index')->name('frontend.cart');
 
 Route::get('/checkout','frontend\CheckoutController@index')->name('frontend.checkout');
 
+Route::get('/login','frontend\LoginController@getLogin')->name('frontend.getlogin');
+
+Route::post('/login','frontend\LoginController@postLogin')->name('frontend.postlogin');
+
+Route::get('/logout','frontend\LoginController@getLogout')->name('frontend.getlogout');
+
+
+
+
+
 
