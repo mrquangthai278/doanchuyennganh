@@ -34,6 +34,9 @@ Route::post('/login','frontend\LoginController@postLogin')->name('frontend.postl
 
 Route::get('/logout','frontend\LoginController@getLogout')->name('frontend.getlogout');
 
+//Admin Route
+Route::get('/admin', 'admin\DashBoardController@index')->name('admin');
+
 
 
 
